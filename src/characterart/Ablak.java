@@ -63,7 +63,7 @@ public class Ablak extends javax.swing.JFrame {
 
                         int index = (int)(red + green + blue)/3;
 
-                        result += characterMatch(index);
+                        result += characterMatch2(index);
                         count++;
                         jProgressBar1.setValue(count);
                         jProgressBar1.setString(((double)count / (double)pixels)*100 + " %");
@@ -103,6 +103,96 @@ public class Ablak extends javax.swing.JFrame {
             else if(index > 25 && index <= 230)
                 re = ".";
 
+            return re;
+        }
+        
+        private String characterMatch2(int index){
+            String re = "";
+            if(index == 0)
+                re = " ";
+            else if(index > 0 && index <= 6){
+                re = "-";
+            }else if(index > 6 && index <= 12){
+                re = ".";
+            }else if(index > 12 && index <= 18){
+                re = "_";
+            }else if(index > 18 && index <= 24){
+                re = "'";
+            }else if(index > 24 && index <= 30){
+                re = ":";
+            }else if(index > 30 && index <= 36){
+                re = "=";
+            }else if(index > 36 && index <= 42){
+                re = "÷";
+            }else if(index > 42 && index <= 48){
+                re = ";";
+            }else if(index > 48 && index <= 54){
+                re = "*";
+            }else if(index > 54 && index <= 60){
+                re = "L";
+            }else if(index > 60 && index <= 66){
+                re = "T";
+            }else if(index > 66 && index <= 72){
+                re = "|";
+            }else if(index > 72 && index <= 78){
+                re = ">";
+            }else if(index > 78 && index <= 84){
+                re = "F";
+            }else if(index > 84 && index <= 90){
+                re = "<";
+            }else if(index > 90 && index <= 96){
+                re = "Ł";
+            }else if(index > 96 && index <= 102){
+                re = "í";
+            }else if(index > 102 && index <= 108){
+                re = "ł";
+            }else if(index > 108 && index <= 114){
+                re = "¤";
+            }else if(index > 114 && index <= 120){
+                re = "{";
+            }else if(index > 120 && index <= 126){
+                re = "5";
+            }else if(index > 126 && index <= 132){
+                re = "}";
+            }else if(index > 132 && index <= 138){
+                re = "€";
+            }else if(index > 138 && index <= 144){
+                re = "2";
+            }else if(index > 144 && index <= 150){
+                re = "C";
+            }else if(index > 150 && index <= 156){
+                re = "#";
+            }else if(index > 156 && index <= 162){
+                re = "ä";
+            }else if(index > 162 && index <= 168){
+                re = "Ä";
+            }else if(index > 168 && index <= 174){
+                re = "Ű";
+            }else if(index > 174 && index <= 180){
+                re = "G";
+            }else if(index > 180 && index <= 186){
+                re = "đ";
+            }else if(index > 186 && index <= 192){
+                re = "8";
+            }else if(index > 192 && index <= 198){
+                re = "&";
+            }else if(index > 198 && index <= 204){
+                re = "M";
+            }else if(index > 204 && index <= 210){
+                re = "N";
+            }else if(index > 210 && index <= 216){
+                re = "Đ";
+            }else if(index > 216 && index <= 222){
+                re = "Q";
+            }else if(index > 222 && index <= 228){
+                re = "$";
+            }else if(index > 228 && index <= 234){
+                re = "B";
+            }else if(index > 234 && index <= 240){
+                re = "@";
+            }else{
+                //valami
+            }              
             return re;
         }
 
