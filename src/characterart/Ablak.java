@@ -61,13 +61,13 @@ public class Ablak extends javax.swing.JFrame {
                         int green = (int)(c.getGreen() * 0.587);
                         int blue = (int)(c.getBlue() *0.114);
 
-                        int index = (int)(red + green + blue)/3;
+                        int index = (int)(red + green + blue)/3;                        
 
                         result += characterMatch2(index);
                         count++;
                         jProgressBar1.setValue(count);
                         jProgressBar1.setString(((double)count / (double)pixels)*100 + " %");
-                        System.out.println(((double)count / (double)pixels)*100 + " %");
+                        //System.out.println(((double)count / (double)pixels)*100 + " %");
                     }
                     result += "\n";
                 }           
